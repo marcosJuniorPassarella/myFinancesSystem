@@ -43,11 +43,7 @@ function App() {
   return (
     <div>
       <Header />
-      <FinanceControl
-        handleSetMovement={setNewMovement}
-        balance={currentBalance}
-        expenses={currentExpenses}
-      />
+      <FinanceControl />
     </div>
   );
 }
