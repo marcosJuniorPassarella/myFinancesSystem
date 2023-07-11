@@ -3,6 +3,7 @@ import "./App.css";
 import FinanceControl from "./components/FinanceControl/FinanceControl";
 import Header from "./components/Header/Header";
 import { Movement } from "./models/interfaces/Movement/Movement";
+import Movements from "./components/Movements/Movements";
 
 function App() {
   const [currentBalance, setCurrentBalance] = useState(0); // State de saldo atual
@@ -48,6 +49,7 @@ function App() {
         expenses={currentExpenses}
         handleSetMovement={setNewMovement}
       />
+      <Movements movementsList={movementsItens} />
     </div>
   );
 }
