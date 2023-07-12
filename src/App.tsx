@@ -4,6 +4,7 @@ import FinanceControl from "./components/FinanceControl/FinanceControl";
 import Header from "./components/Header/Header";
 import { Movement } from "./models/interfaces/Movement/Movement";
 import Movements from "./components/Movements/Movements";
+import { FormatMoney } from "./utils/util";
 
 function App() {
   const [currentBalance, setCurrentBalance] = useState(0); // State de saldo atual
@@ -16,7 +17,7 @@ function App() {
         const movements = [...prevMovements];
         movements.unshift({
           name: movement.name,
-          value: movement.value,
+          value: FormatMoney(movement.value),
           type: movement.type,
           id: Math.random().toString(),
         });
