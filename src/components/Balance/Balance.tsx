@@ -1,49 +1,10 @@
 import React, { useState } from "react";
-import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDollar } from "@fortawesome/free-solid-svg-icons";
 import { BalanceProps } from "../../models/interfaces/BalanceProps/BalanceProps";
 import Button from "../Button/Button";
 import { FormatMoney } from "../../utils/util";
 import "./Balance.css";
-
-export const Container = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
-export const Card = styled.div`
-  background-color: #36383e;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 500px;
-  height: 300px;
-  border-radius: 1.2rem;
-
-  & h2 {
-    margin-left: 1rem;
-    font-weight: 500;
-    font-size: 2.2rem;
-    color: #dddcda;
-  }
-
-  & h3 {
-    margin-left: 1rem;
-    font-weight: 500;
-    font-size: 2.2rem;
-    color: #dddcda;
-  }
-`;
-
-export const CardHeader = styled.header`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: -2rem;
-`;
 
 const Balance = ({ emitMovement, currentBalance }: BalanceProps) => {
   const [renderInputForm, setRenderInputForm] = useState(false);
@@ -92,12 +53,12 @@ const Balance = ({ emitMovement, currentBalance }: BalanceProps) => {
 
   return (
     <div>
-      <Container>
-        <Card>
-          <CardHeader>
+      <div className="balance_container">
+        <div className="balance_card">
+          <header className="balance_header">
             <FontAwesomeIcon icon={faDollar} color="#7af1a7" size="2x" />
             <h2>Saldo</h2>
-          </CardHeader>
+          </header>
 
           <h3>
             {" "}
@@ -146,8 +107,8 @@ const Balance = ({ emitMovement, currentBalance }: BalanceProps) => {
               </div>
             </form>
           )}
-        </Card>
-      </Container>
+        </div>
+      </div>
     </div>
   );
 };

@@ -1,10 +1,10 @@
-/* .balance_container {
+.balance_container {
   display: flex;
   justify-content: center;
   align-items: center;
-} */
+}
 
-/* .balance_card {
+.balance_card {
   background-color: #36383e;
   display: flex;
   justify-content: center;
@@ -13,29 +13,28 @@
   width: 500px;
   height: 300px;
   border-radius: 1.2rem;
-} */
+}
 
-
-/* .balance_card h2 {
-  margin-left: 1rem;
-  font-weight: 500;
-  font-size: 2.2rem;
-  color: #dddcda;
-} */
-
-/* .balance_card h3 {
-  margin-left: 1rem;
-  font-weight: 500;
-  font-size: 2.2rem;
-  color: #dddcda;
-} */
-
-/* .balance_header {
+.balance_header {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: -2rem;
-} */
+}
+
+.balance_card h2 {
+  margin-left: 1rem;
+  font-weight: 500;
+  font-size: 2.2rem;
+  color: #dddcda;
+}
+
+.balance_card h3 {
+  margin-left: 1rem;
+  font-weight: 500;
+  font-size: 2.2rem;
+  color: #dddcda;
+}
 
 .input_form_container {
   display: flex;
