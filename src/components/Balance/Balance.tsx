@@ -140,7 +140,6 @@ const Balance = ({ emitMovement, currentBalance }: BalanceProps) => {
   };
 
   return (
-    <div>
       <Container>
         <Card>
           <CardHeader>
@@ -191,7 +190,6 @@ const Balance = ({ emitMovement, currentBalance }: BalanceProps) => {
           )}
         </Card>
       </Container>
-    </div>
   );
 };
 
